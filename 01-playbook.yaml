@@ -1,5 +1,5 @@
 - name: Backup of stacks
-  hosts: LABSTACK42
+  hosts: CORPSTACK4.1
   tasks:
   - name: Perform a ping test
     ansible.builtin.ping:
