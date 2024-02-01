@@ -2,11 +2,5 @@
   hosts: CORPSTACK4.1
   become: yes
   tasks:
-  - name: Backup of stacks
-    ansible.builtin.shell: upload configuration 10.225.18.31 stack38finalbackup "VR-Default" > /home/output/stack38
-
-  - name: Copy a file and create a backup
-    ansible.builtin.copy:
-      src: /home/output/stack38
-      dest: /home/finalbackup/stack38
-      backup: yes
+  - name: ping the server
+    ansible.builtin.ping: 
