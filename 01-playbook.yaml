@@ -7,5 +7,5 @@
   - name: Copy a file and create a backup
     ansible.builtin.copy:
       src: /home/output/stack42
-      dest: /home/finalbacup/stack42
+      dest: /home/finalbackup/stack42
       backup: yes
