@@ -1,8 +1,11 @@
 - name: Backup of stacks
   hosts: LABSTACK42
   tasks:
+  - name: Perform a ping test
+    ansible.builtin.ping:
+
   - name: Backup of stacks
-    ansible.builtin.shell: upload configuration 10.225.18.91 stack42finalbackup "VR-Default" > /home/output/stack42
+    ansible.builtin.shell: upload configuration 10.225.18.31 stack42finalbackup "VR-Default" > /home/output/stack42
 
   - name: Copy a file and create a backup
     ansible.builtin.copy:
