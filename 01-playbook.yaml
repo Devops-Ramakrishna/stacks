@@ -5,10 +5,10 @@
     ansible.builtin.ping:
 
   - name: Backup of stacks
-    ansible.builtin.shell: upload configuration 10.225.18.31 stack42finalbackup "VR-Default" > /home/output/stack42
+    ansible.builtin.shell: upload configuration 10.225.18.31 stack38finalbackup "VR-Default" > /home/output/stack38
 
   - name: Copy a file and create a backup
     ansible.builtin.copy:
-      src: /home/output/stack42
-      dest: /home/finalbackup/stack42
+      src: /home/output/stack38
+      dest: /home/finalbackup/stack38
       backup: yes
