@@ -1,5 +1,5 @@
 - name: Backup of stacks
-  hosts: CORPSTACK4.1
+  hosts: localhost.localdomain
   become: yes
   tasks:
   - name: ping the server
