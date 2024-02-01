@@ -3,13 +3,13 @@
   become : yes
   tasks:
   - name: Perform a ping test
-      ansible.builtin.ping: CORPSTACK4.1
+    ansible.builtin.ping: CORPSTACK4.1
 
   - name: Backup of stacks
-      ansible.builtin.shell: upload configuration 10.225.18.31 stack38finalbackup "VR-Default" > /home/output/stack38
+    ansible.builtin.shell: upload configuration 10.225.18.31 stack38finalbackup "VR-Default" > /home/output/stack38
 
   - name: Copy a file and create a backup
-      ansible.builtin.copy:
-        src: /home/output/stack38
-        dest: /home/finalbackup/stack38
-        backup: yes
+    ansible.builtin.copy:
+      src: /home/output/stack38
+      dest: /home/finalbackup/stack38
+      backup: yes
