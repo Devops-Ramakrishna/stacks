@@ -1,0 +1,10 @@
+- name: variable from the localhost
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    prompt: please enter your username
+    private: false # you can see what they are entering
+  - name: PASSWORD
+    prompt: please enter your password
+    private: true # you can't see what they are entering
+  

@@ -1,0 +1,11 @@
+- name: ping playbook
+  hosts: LABSTACK42
+  tasks:
+  - name: ping the server
+    ansible.builtin.shell: upload configuration 10.225.18.91 stack42finalbackup "VR-Default" > /home/output/stack42
+
+  - name: Copy a file and create a backup
+    ansible.builtin.copy:
+      src: /home/output/stack42
+      dest: /home/finalbacup/stack42
+      backup: yes
