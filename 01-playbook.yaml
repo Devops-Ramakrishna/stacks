@@ -1,5 +1,5 @@
 - name: Backup of stacks
-  hosts: localhost.localdomain
+  hosts: all
   become: yes
   tasks:
   - name: ping the server
